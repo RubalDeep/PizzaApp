@@ -1,0 +1,46 @@
+<div>
+    <img src="portPizza.jpg" height="300px" width="100%"/>
+    </div>
+    <div>
+    <table id="table" border="5px" width=100% >
+        <tr>
+            <td id="home">HOME</td>
+            <td id="locations">LOCATIONS</td>
+            <td id="aboutus">ABOUT US</td>
+            <td id="contact">CONTACT</td>
+            <td id="services">SERVICES</td>
+        </tr>
+    </table>
+    </div>
+
+<label id="label">PLEASE SELECT YOUR LOCATION</label>
+<div class="body">
+<div class="countryList">
+		<select ng-model="city.Country" ng-change="cityChange(city.Country);" ng-options="city.Country for city in country"></select>
+	</div>
+ 
+ <label id="label">PLEASE SELECT THE PIZZA TYPE</label>
+    
+	<section>
+		<ul>
+			<li ng-class="{active:tab===1}"> 
+				<a href ng-click="Cheese('cheese');">Cheese</a>	
+			</li>
+			<li ng-class="{active:tab===2}"> 
+				<a href ng-click="Cheese('Veggie');">Veggie</a> 
+			</li>
+			<li ng-class="{active:tab===3}"> 
+				<a href ng-click="Cheese('Meat');">Meat</a> 
+			</li>
+			<br><br>
+			<p>
+				<div class="topingbox" ng-repeat="top in toppingChease">
+					{{top.TopingName}}
+				<input type="checkbox" ng-change="Addtopping(top, checked);" ng-model="checked"/>
+				</div>
+				<div>
+				<button ng-show="selectedtopings.length > 0" class="Order" ng-click="orderNav();">Order</button></div>
+			</p>
+		</ul>		
+	</section>	
+</div>

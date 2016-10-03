@@ -1,0 +1,100 @@
+/* 
+-------------------------------------------
+	Author			:	
+	Date Updated	:	19/07/2016
+	File			:	Pizza.css
+-------------------------------------------
+	CSS RESET
+........................................*/
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,
+h6,pre,form,fieldset,input,p,blockquote,table,
+th,td { margin: 0; padding: 0; }
+p {
+		font-size: 22px;
+		font-weight: bold;
+		font-style: italic;
+		color: rgb(62, 62, 62);
+		margin: 18px;
+	}
+	ul {
+		float: left;
+		border-radius: 5px;
+		border: solid 1px rgb(198, 198, 198);
+		padding: 7px 11px;
+		background-color: rgb(248,248,248);
+	}
+	li {
+		float: left;
+		background-color: rgb(200,200,200);
+		padding: 5px 19px;
+		margin: 5px 2px 5px 0px;
+		color: black;
+		list-style: none;
+	}
+	li:hover, li:hover a {
+		background-color: rgb(6,179,6);
+		color:white;
+	}
+	li a {
+		text-decoration: none;
+		color: white;
+		font-size: 21px;
+		font-style: italic;
+		text-shadow: 1px 0px 3px rgb(157, 157, 157);
+	}
+	li:nth-child(1) { border-radius: 4px 0px 0px 4px; margin-left: 1px;}
+	li:nth-child(3) { border-radius: 0px 4px 4px 0px;}
+	.active {
+		background-color: rgb(6,179,6);
+	}
+	
+.topingbox{
+	width:100px;
+	height:120px;
+	border:1px solid #F0F;
+	margin:2px;
+	float:left;
+	}
+.Order{
+	border:none;
+	background:blue;
+	color:#FFF;
+	}
+.countryList{
+	margin:10px;
+}
+
+#label
+
+{position: relative;
+font-style: italic;
+    background: yellow;
+    font-size: 35px;
+color:chocolate ;
+    font-weight:bold}
+
+#table
+
+{ margin: 10px;
+    border: 10px black solid;
+    cell padding: 10px;
+    cell border-spacing: 10px;
+    position: relative;
+font-style: italic;
+background: skyblue;
+    font-size: 30px;
+color:chocolate ;
+    font-weight:bold}
+
+
+
+
+#xyz
+{
+    position: relative;
+font-style: italic;
+    background:pink;
+    font-size: 25px;
+color:brown;
+font-weight:bold;}
